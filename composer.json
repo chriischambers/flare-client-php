@@ -1,6 +1,6 @@
 {
-    "name": "chrischambers/flare-client-php",
-    "description": "Send PHP errors to Flare",
+    "name": "chrischambers/flare-client-php-7.4",
+    "description": "Send PHP errors to Flare (for PHP 7.4.* only)",
     "keywords": [
         "spatie",
         "flare",
