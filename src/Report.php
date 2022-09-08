@@ -81,15 +81,6 @@ class Report
 
     protected static function getClassForThrowable(Throwable $throwable): string
     {
-        /** @phpstan-ignore-next-line */
-        if ($throwable::class === ViewException::class) {
-
-            /** @phpstan-ignore-next-line */
-            if ($previous = $throwable->getPrevious()) {
-                return get_class($previous);
-            }
-        }
-
         return get_class($throwable);
     }
 

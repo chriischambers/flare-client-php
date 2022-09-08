@@ -33,7 +33,7 @@ class View
         return new self($file, $data);
     }
 
-    protected function dumpViewData(mixed $variable): string
+    protected function dumpViewData($variable): string
     {
         $cloner = new VarCloner();
 

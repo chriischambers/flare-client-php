@@ -264,7 +264,7 @@ class Flare
     /**
      * @return mixed
      */
-    public function handleError(mixed $code, string $message, string $file = '', int $line = 0)
+    public function handleError($code, string $message, string $file = '', int $line = 0)
     {
         $exception = new ErrorException($message, 0, $code, $file, $line);
 

@@ -4,13 +4,13 @@ namespace Spatie\FlareClient\Http;
 
 class Response
 {
-    protected mixed $headers;
+    protected $headers;
 
-    protected mixed $body;
+    protected $body;
 
-    protected mixed $error;
+    protected $error;
 
-    public function __construct(mixed $headers, mixed $body, mixed $error)
+    public function __construct($headers, $body, $error)
     {
         $this->headers = $headers;
 
@@ -19,12 +19,12 @@ class Response
         $this->error = $error;
     }
 
-    public function getHeaders(): mixed
+    public function getHeaders()
     {
         return $this->headers;
     }
 
-    public function getBody(): mixed
+    public function getBody()
     {
         return $this->body;
     }
@@ -34,7 +34,7 @@ class Response
         return $this->body != false;
     }
 
-    public function getError(): mixed
+    public function getError()
     {
         return $this->error;
     }

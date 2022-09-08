@@ -38,7 +38,7 @@ trait HasContext
         return $this->userProvidedContext[$groupName] ?? $default;
     }
 
-    public function context(string $key, mixed $value): self
+    public function context(string $key, $value): self
     {
         return $this->group('context', [$key => $value]);
     }
